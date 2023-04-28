@@ -1,0 +1,24 @@
+{
+  "name": "preorder_reminder",
+  "version": "1.0.0",
+  "description": "Logs and gives a list of upcoming preorders the user creates.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "preorder",
+    "reminder",
+    "electron",
+    "js",
+    "desktop",
+    "application"
+  ],
+  "author": "Chase Quinn",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.31.0",
+    "sqlite3": "^5.1.6"
+  }
+}

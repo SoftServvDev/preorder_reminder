@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Reminder</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body onload="loadInitialTable();">
+    <div class="new-preorder-container">
+        <form onsubmit="createPreorder(event)">
+            <input class="text-input text input" placeholder="Item Name" type="text" id="ItemName" required />
+            <input class="text-input number input" placeholder="Cost" step="0.01" type="number" id="ItemCost" required />
+            <select class="select-input input" id="Currency" required>
+                    <option selected>Currency</option>
+                    <option value="USD">USD</option>
+                    <option value="JPY">JPY</option>
+            </select>
+            <input class="text-input text input" placeholder="Vendor Name" type="text" id="VendorName" required />
+            <input class="text-input text input" placeholder="URL" type="text" id="ItemURL" required />
+            <label for="ReleaseDate input" class="input-label">Release Date</label>
+            <input class="date-input input" type="date" id="ReleaseDate" required />
+            <button type="submit" class="preorder-button">Create</button>
+        </form>
+        <div id="Notification">
+            <p id="Message"></p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Currency</th>
+                    <th>Vendor</th>
+                    <th>URL</th>
+                    <th>Date</th>
+                </thead>
+                <tbody id="PreOrderList"></tbody>
+        </table>
+    </div>
+
+    <script src="./assets/js/NewPreorder.js"></script>
+</body>
+</html>
