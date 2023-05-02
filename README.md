@@ -26,22 +26,23 @@ The currency shows in the cost column depending on what is set for the items cur
 
 # Packaging instructions:
 
-- use this command within the directory of the app
+- Install all of the depencies using the following command within the root directory of the app
 
-npx electron-forge import
+      npm install
 
 
 
-- set the following scripts in package.json
+- MAKE SURE that you have the latest version of visual studio with Desktop Development with C++ downloaded. The following is from node-gyp:
 
-"scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
-  },
+      '**************************************************************',
+      'You need to install the latest version of Visual Studio',
+      'including the "Desktop development with C++" workload.',
+      'For more information consult the documentation at:',
+      'https://github.com/nodejs/node-gyp#on-windows',
+      '**************************************************************'
 
 
 
 - create distributable using this command
 
-npm run make
+      npm run make
