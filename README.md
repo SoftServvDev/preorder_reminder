@@ -46,3 +46,11 @@ The currency shows in the cost column depending on what is set for the items cur
 - create distributable using this command
 
       npm run make
+
+
+
+## Code Repo Location
+
+You can find the code here:
+
+https://github.com/SoftServvDev/preorder_reminder
