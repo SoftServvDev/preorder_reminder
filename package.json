@@ -20,5 +20,8 @@
   "dependencies": {
     "sequelize": "^6.31.0",
     "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1"
   }
 }
