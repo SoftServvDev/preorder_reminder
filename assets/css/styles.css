@@ -39,3 +39,67 @@
 .table-container table{
     width: 100%;
 }
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 3rem;
+}
+
+.nav a{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formContainer{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formContainer form label{
+    display: block;
+    margin-top: 1rem;
+}
+
+.edit{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.edit button{
+    background-color: green;
+    color: white;
+    padding: 8px 16px;
+}
+
+.delete{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#DeleteButton{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 3rem;
+}
+
+.heading h2{
+    margin: auto;
+}

@@ -5,60 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Order Reminder</title>
+    <title>Edit</title>
+    <script src="./assets/js/NewPreorder.js"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-
-
-<body onload="loadInitialTable();">
-    <div class="new-preorder-container">
-        <form onsubmit="createPreorder(event)">
+<body onload="editForm();">
+    <div class="nav">
+        <a href="./index.html">Back</a>
+    </div>
+    <div class="heading">
+        <h2>Edit Pre-Order</h2>
+    </div>
+    <hr />
+    <div class="formContainer">
+        <form onsubmit="handlePreOrderEdit(event)">
+            <label for="ID">Pre-Order ID</label>
+            <input type="number" id="ID" readonly>
+            <label for="ItemName">Item Name</label>
             <input class="text-input text input" placeholder="Item Name" type="text" id="ItemName" required />
+            <label for="ItemCost">Item Cost</label>
             <input class="text-input number input" placeholder="Cost" step="0.01" type="number" id="ItemCost"
                 required />
+            <label for="Currency">Currency</label>
             <select class="select-input input" id="Currency" required>
                 <option selected>Currency</option>
                 <option value="USD">USD</option>
                 <option value="JPY">JPY</option>
             </select>
+            <label for="Vendor">Vendor</label>
             <input class="text-input text input" placeholder="Vendor Name" type="text" id="VendorName" required />
+            <label for="Url">URL</label>
             <input class="text-input text input" placeholder="URL" type="text" id="ItemURL" required />
             <label for="ReleaseDate input" class="input-label">Release Date</label>
             <input class="date-input input" type="date" id="ReleaseDate" required />
-            <button type="submit" class="preorder-button">Create</button>
+            <div class="edit">
+                <button type="submit" class="preorder-button">Edit</button>
+            </div>
         </form>
-        <div id="Notification">
-            <p id="Message"></p>
+        <div class="delete">
+            <button id="DeleteButton" onclick="handleDelete();">Delete</button>
         </div>
     </div>
-    <div class="nav">
-      <a href="./paid.html">See Paid</a>
-    </div>
-    <div class="heading">
-        <h2>Upcoming Pre-Orders</h2>
-    </div>
-    <hr />
-    <div class="table-container">
-        <table style="border-collapse: separate; border-spacing: 10px;">
-            <tr>
-                <thead>
-                    <th>Name</th>
-                    <th>Cost</th>
-                    <th>Vendor</th>
-                    <th>URL</th>
-                    <th>Date</th>
-                    <th>Edit</th>
-                    <th>Mark UnPaid</th>
-                </thead>
-            </tr>
-            <tbody id="PreOrderList">
 
-            </tbody>
-        </table>
-    </div>
-
-    <script src="./assets/js/NewPreorder.js"></script>
 </body>
 
 </html>

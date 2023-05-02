@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Reminder</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body onload="LoadPaidTable();">
+    <div class="nav">
+        <a href="./index.html">back</a>
+    </div>
+    <div class="heading">
+        <h2>Paid Pre-Orders</h2>
+    </div>
+    <hr />
+    <div class="table-container">
+        <table style="border-collapse: separate; border-spacing: 10px;">
+            <tr>
+                <thead>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Vendor</th>
+                    <th>URL</th>
+                    <th>Date</th>
+                    <th>Edit</th>
+                    <th>Mark UnPaid</th>
+                </thead>
+            </tr>
+            <tbody id="PreOrderList">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./assets/js/NewPreorder.js"></script>
+</body>
+
+</html>
